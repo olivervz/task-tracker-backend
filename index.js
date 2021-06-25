@@ -75,5 +75,5 @@ app.put("/api/update", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  res.send("hello");
+  console.log("hello");
 });
