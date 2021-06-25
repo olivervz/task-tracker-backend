@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const app = express();
 const mysql = require("mysql");
+const PORT = process.env.port || 3001;
 
 const db = mysql.createPool({
   host: "localhost",
@@ -73,6 +74,6 @@ app.put("/api/update", (req, res) => {
   });
 });
 
-app.listen(3001, () => {
+app.listen(PORT, () => {
   console.log("listening on port 3001");
 });
