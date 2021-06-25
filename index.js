@@ -75,5 +75,5 @@ app.put("/api/update", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log("listening on port 3001");
+  res.send("hello");
 });
